@@ -22,11 +22,13 @@ const noMessages = [
 ]
 
 const yesTeasePokes = [
+    "I knew you will always say yes first, go ahead and click no",
     "try saying no first... I bet you want to know what happens 😏",
     "go on, hit no... just once 👀",
     "you're missing out 😈",
     "click no, I dare you 😏",
-    "click noooooooooo, I dare you 😏"
+    "click noooooooooo, I dare you",
+    "I need more rejections, haha"
 ]
 
 let yesTeasedCount = 0
@@ -110,7 +112,7 @@ function handleNoClick() {
     swapGif(gifStages[gifIndex])
 
     // Runaway starts at click 5
-    if (noClickCount >= 5 && !runawayEnabled) {
+    if (noClickCount >= 8 && !runawayEnabled) {
         enableRunaway()
         runawayEnabled = true
     }
